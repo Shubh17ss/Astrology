@@ -1,0 +1,729 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    
+    
+}
+
+main{
+
+    font-family: "Heebo",sans-serif;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 80vh;
+}
+body{
+    
+}
+section{
+    position:relative;
+    width:100%;
+    height: 100vh;
+    border:1px solid black;
+}
+
+.project{
+    position:absolute;
+    top:200vh;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro{
+    background: black;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text{
+    color:rgb(233,233,233);
+    font-family: "Heebo",cursive;
+    font-size: 3rem;
+}
+
+.intro-text .hide .text1{
+    font-family:'Nuosu SIL',sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.slider{
+        background: rgb(255, 255, 255);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform:translateY(100%);
+}
+
+.hide{
+    background:black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform:translateY(115%);
+    display:inline-block;
+
+}
+
+
+/* THIS PART IS THE NAVBAR DESIGNING */
+.nav-container{
+    font-family: "Inter",sans-serif;
+    background:transparent;
+    height: 44px;
+    z-index:300;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    transition:1s ease-in-out;
+    
+}
+.nav-container.scrolled{
+    /* background:linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0.5)); */
+    background: #D3D3D3;
+    transition:0.5s ease-in-out;
+    
+}
+.nav-container.scrolled-bg{
+    background:white;
+    transition:0.5s ease-in-out;
+}
+
+.nav-container nav{
+    width:1000px;
+    margin:0 auto;
+    padding:0 8px;
+    height:100%;
+}
+
+nav .desktop-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+    list-style: none;
+
+}
+
+nav .desktop-nav li a{
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition:opacity 400ms;
+}
+
+nav .desktop-nav li a:hover{
+    opacity:1;
+
+}
+
+
+
+.logo{
+    background: url('./images/logo.png');
+    display:block;
+    background-position: center;
+    height:44px;
+    background-size: 28px;
+    width:20px;
+    background-repeat: no-repeat;
+}
+
+/* HIDDEN ITEMS */
+.mobile-nav{
+    display:none;
+}
+/*  */
+
+
+/* REST PART */
+.rest-part {
+    position: relative;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    background:white;
+        
+   
+}
+
+.rest-part .quote {
+    font-family: 'Tangerine',cursive;
+    margin-top: 10%;
+    font-size: 30px;
+    font-weight:lighter;
+    color:#B2BEB5;
+}
+
+.division .line_division{
+        position: absolute;
+        left: 43%;
+        height: .6px;
+        width: 12%;
+        margin-top: 40px;
+        background: #B2BEB5;
+        transition: all 400ms ease;
+}
+
+.presentation{
+    display: flex;
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    border:none;
+    min-height: 40vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation.second{
+    margin-top:-10%;
+    min-height: 40vh;;
+}
+
+
+.introduction h1{
+    font-family: 'Inter',sans-serif;
+    color:black;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 70px;
+    word-spacing: -1px;
+}
+
+.introduction p{
+    font-size: 35px;
+    color:#A9A9A9;
+}
+
+.cta{
+        padding:30px 0px 0px 0px;
+}
+
+.cta button{
+    border:2px solid black;
+    background: transparent;
+    color:black;
+    width:100px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+    transition: 0.2s ease-in;
+    cursor:pointer;
+}
+
+.cta button:hover{
+    background-color: black;
+    color:white;
+}
+
+
+
+
+.cover img{
+    height:50vh;
+  
+}
+
+
+
+
+/* REST PART END */
+
+
+/* ASTRO INFO PART BEGIN */
+
+.carousel::before{
+    content: '';
+    position:absolute;
+    top:-10%;
+    width:100%;
+    height:20%;
+    background: linear-gradient(to bottom,#fff,transparent);
+    z-index: 2;
+
+}
+.shade{
+    position:absolute;
+    top:0;
+    left:5%;
+    width:90%;
+    height: 90vh;
+    background:linear-gradient(to left,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    z-index: 5;
+    border-radius: 30px;
+}
+
+.astrology_info{
+    
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.carousel{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    border:none;
+}
+
+.carousel > ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+    opacity: 0;
+    transition: 400ms opacity ease-in-out;
+    transition-delay: 400ms;
+}
+
+.slide > img{
+    display: block;
+    width:90%;
+    height:90vh;
+    object-fit:cover;
+    object-position:center;
+    margin-left: 5%;
+    border:1px solid black;
+    padding:0;    
+    border-radius: 30px;;
+
+    
+}
+
+.slide[data-active]{
+    opacity:1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+.slide.active2{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button{
+    position:absolute;
+    background: none;
+    border:none;
+    z-index: 6;
+    top:45%;
+    font-size: 2rem;
+    color:rgba(255,255,255,0.5);
+    transform:translateY(-50%);
+    cursor:pointer;
+    padding:0 0.5 rem;
+    border-radius: 0.25rem;
+    background-color:rgba(0,0,0,0.1) ;
+}
+
+.carousel-button:hover{
+    color:white;
+    background-color: rgba(0,0,0,0.2);
+}
+.carousel-button:focus{
+    outline:1px solid black;
+}
+
+.carousel-button.prev{
+    left:5.2rem;
+}
+
+.carousel-button.next{
+    right:5.2rem;
+}
+
+.carousel-text{
+    position:absolute;
+    top:25%;
+    left:25%;
+    font-size: 60px;
+    color:white;
+    z-index: 10;
+}
+
+/* ASTRO INFO PART CAROUSEL END */
+
+
+/* PATRIKA CONTAINER BEGIN */
+.patrika_container{
+    width:100%;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Inter',sans-serif;
+    margin-bottom: 50px;
+    padding:3px;
+}
+.patrika_container .patrika_info{
+    width:50%;
+    position: absolute;
+    right:6%;
+    padding-bottom: 20px;
+}
+
+.patrika_container .patrika_info p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color:#A9A9A9;
+}
+.patrika_container h1{
+    position:absolute;
+    left:6%;
+    font-size: 44px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+.patrika_container .patrika_info p a{
+    text-decoration: none;
+    color:#007BFF;
+    transition:0.5s ease-in-out;
+    
+}
+.patrika_container .patrika_info p a:hover{
+    color:#333;
+    text-decoration: underline;
+   
+}
+
+/*  PATRIKA CONTAINER END*/
+
+
+
+@media (max-width:1110px) {
+    .nav-container nav{
+        width:100%;
+        padding:0 32px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .presentation .introduction{
+        width:100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .presentation{
+        flex-direction: column;
+        margin-top: -20%;
+        justify-content:center  ;
+    }
+    .presentation .introduction h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+   .presentation .introduction p{
+             font-size: 20px;
+             margin-top: 15px;
+         }
+    
+    .presentation.second {
+            margin-top: -80%;
+         }
+    .cover img{
+        width:100%;
+        height:30vh;
+    }
+
+    .cta button{
+        margin:auto;
+        border:0.3px solid #333;
+        height:20px;
+        width:70px;
+        font-size: 10px;;
+    }
+
+    .rest-part .quote{
+        font-family: 'Great Vibes',cursive;
+        font-size: 14px;
+        letter-spacing: .5px;
+        margin-top: 30%;
+    }
+
+    .division .line_division{
+        height: 0.5px;
+        width: 25%;
+        left:38%;
+        margin-top: 20px;;
+    }
+   
+
+    .nav-container{
+        color:white;
+    }
+
+
+    .nav-container .desktop-nav{
+        flex-direction: column;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:0vh;
+        background:black;
+        justify-content: start;
+        overflow: hidden;
+        z-index:-1;
+        transition:all 700ms ease;
+    }
+    .nav-container.active .desktop-nav{
+        height:100vh;
+    }
+     
+    .nav-container .desktop-nav li{
+        width:100%;
+        padding:0 32px;
+    }
+    .nav-container .desktop-nav li:first-child{
+        margin-top:120px;
+    }
+
+    .nav-container .desktop-nav .logo{
+        display:none;
+    }
+
+    .nav-container .desktop-nav li a{
+        color:white;
+        padding:16px;
+        display: inline-block;
+        border-bottom: 1px solid #616161;
+        width:100%;
+        font-size: 17px;
+        transform:translateY(-80px);
+        opacity: 0;
+        transition:all 600ms ease;
+    }
+
+    .nav-container.active .desktop-nav li a{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    /* Mobile nav */
+    nav .mobile-nav{
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+        list-style: none;
+    }
+    
+    nav .menu-icon-container{
+        width:20px;
+        height:44px;
+        
+        display:flex;
+        align-items: center;
+        cursor:pointer;
+    }
+
+    nav .menu-icon{
+        position:relative;
+        width:100%;
+    }
+    nav .menu-icon .line-1,
+    nav .menu-icon .line-2{
+
+        position:absolute;
+        height:1px;
+        width:100%;
+        background:black;
+        transition:all 400ms ease;
+    }
+
+    nav .menu-icon .line-1{
+        top:-4px;
+
+    }
+    nav .menu-icon .line-2{
+        top:4px;
+
+    }
+
+    .nav-container.active nav .menu-icon-container .menu-icon .line-1{
+        top:0;
+        transform:rotateZ(45deg);
+        height: 1.5px;
+        background: white;
+    }
+    .nav-container.active nav .menu-icon-container .menu-icon .line-2 {
+        top: 0;
+        transform: rotateZ(-45deg);
+        background: white;
+    }
+
+    /* CAROUSEL PART BEGIN*/
+
+    .slide .shade{
+        height:70vh;
+        width:97%;
+        top:0.5%;
+        left: 5px;
+        padding:5px;
+        border:none;
+        border-radius: 7px;
+       
+    }
+
+    .astrology_info section{
+        height:80vh;
+    }
+    
+ 
+    .carousel > ul{
+        margin:auto;
+        
+    }
+    .slide{
+        padding:5px;
+      
+    }
+
+
+    .slide > img{
+        height:70vh;
+        width:100%;
+        margin-left: 0;
+        border:none;
+        border-radius: 7px;
+
+    }
+    .carousel-button{
+        background-color: transparent;
+        top:35%;
+        color:rgba(255,255,255,0.8)
+    }
+
+    .carousel-button:focus{
+        outline: none;
+    }
+    .carousel-button:hover{
+        background-color: transparent;
+    }
+  .carousel-button.prev {
+            left: 1rem;
+        }
+    
+    .carousel-button.next {
+            right: 1rem;
+        }
+    .carousel-text{
+        font-size: 30px;
+    }
+    /* CAROUSEL PART END */
+
+    /* PATRIKA CONTAINER BEGINS */
+    .patrika_container{
+        
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        padding:35px;
+        width: 100%;
+        text-align: center;
+    }
+    .patrika_container h1{
+        position: relative;
+        width: 100%;
+        margin-top:10px;
+        left:0;
+        font-size: 28px;
+    }
+    .patrika_container .patrika_info{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        right: 0;
+        
+    }
+    .patrika_container .patrika_info p{
+        font-size: 14px;
+        line-height: 21px;
+        text-align: justify;
+    }
+    /* PATRIKA CONTAINER ENDS */
+
+  
+    /* Mobile nav end */
+}
+
+
+
+/*This is the ending of the navbar design */
+
+
+
+
+
+
+
+@media screen and (max-width:860px) {
+    
+ 
+
+    .intro{
+        width:100%;
+        height:100%;
+        display: flex;
+    }
+    .intro-text{
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: flex-start;
+    }
+    .big-text{
+        color:rgb(61, 61, 61);;
+        font-size: 3.0rem;
+        margin-left: 20px;
+    }
+    #logo{
+       display: none;
+
+    }
+    
+}
+
+input,
+div,
+span,
+a{
+    -webkit-tap-highlight-color:transparent ;
+}
+
+

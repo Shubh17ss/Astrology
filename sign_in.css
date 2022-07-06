@@ -1,0 +1,151 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background: #FAF9F6;;
+}
+.one{
+    align-items: center;
+    width:100%;
+    height:90vh ;
+    display: block;
+    overflow: hidden;
+    justify-content: center;
+   
+}
+.container{
+    width:60%;
+    height:70vh;
+    border-radius: 30px;
+    margin-top: 90px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 3px 3px 15px;
+}
+.container2{
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 3px 3px 15px;
+    margin-left: 20%;
+}
+
+.container img{
+
+    height:400px;
+    flex:0.3;
+}
+.container2 img {
+
+    height: 400px;
+    flex: 0.3;
+}
+
+.form_area{
+    display: flex;
+    flex-direction: column;
+}
+.input_field{
+    width:130%;
+    padding:10px;
+    margin:15px;
+    margin-left: -50%;
+    border:1px solid #dcdcdc;
+    outline: none;
+    border-radius: 7px;
+  
+}
+
+
+.input_field_button {
+    width: 130%;
+    padding: 10px;
+    margin: 15px;
+    margin-left: -50%;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    border-radius: 7px;
+    background: black;
+    color:white;
+    transition: 0.3s ease-in-out;
+    margin-top: 30px;
+}
+
+.input_field_button:hover{
+    color:black;
+    background: white;
+    border:1px solid black;
+}
+
+.extras{
+   margin-left: -50%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+}
+
+.extras .register{
+    color:#007BFF;
+    margin-top: 5px;
+    cursor: pointer;
+  
+}
+
+.extras .register:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+
+    .container{
+        flex-direction: column;
+        width:80%;
+        margin-top:5;
+    }
+    
+    .container img {
+        height: 120px;
+        width:50%;
+        margin-bottom: 5px;
+    }
+    .input_field{
+        width:100%;
+        margin:auto;
+        margin-bottom: 20px;
+    }
+    
+    .input_field_button{
+        margin:auto;
+        width:100%;
+    }
+    .extras{
+        margin:auto;
+        margin-top: 40px;
+        width:100%;
+    }
+    .container2 img{
+        display: none;
+    }
+    .container2{
+        flex-direction: column;
+        width:80%;
+        margin-left: 10%;
+        height: 70vh;
+    }
+
+    .container2 .input_field{
+        height: 35px;
+    }
+
+    .container2 .input_field_button{
+        margin-top: 30px;
+    }
+
+}
