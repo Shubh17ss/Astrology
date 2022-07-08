@@ -491,6 +491,20 @@ nav .desktop-nav li a:hover{
     border: 0.5px solid #D3D3D3;
 }
 
+.generate_horoscope_btn{
+    width:100%;
+    height: 38px;
+    background: white;
+    font-size: 16px;
+    border:0.5px solid #D3D3D3;
+    border-radius: 7px;
+    transition: 200ms ease-in-out;
+}
+.generate_horoscope_btn:hover{
+    color:white;
+    background: #333;
+}
+
 /*  PATRIKA CONTAINER END*/
 
 
