@@ -421,6 +421,76 @@ nav .desktop-nav li a:hover{
    
 }
 
+.patrika_info .form_area{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border:1px solid #D3D3D3;
+    padding:20px 10px;
+    box-shadow:5px 12px 12px rgba(0,0,0,0.4);
+}
+.patrika_info .form_area .input_name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.patrika_info .form_area .input_name .input_field{
+
+    margin:10px 30px;
+    height:38px;
+    width:300px; 
+    font-size: 16px;
+    border:0.5px solid #D3D3D3;
+    border-radius: 3px;
+    padding:10px;
+}
+.patrika_info .form_area .gender,.dob{
+    display: flex;
+    justify-content:flex-start;
+    width:100%;
+    height:38px;
+    align-items: center;
+    margin:10px 30px;
+}
+
+#options_gender{
+    width:90%;
+    height: 38px;
+    font-size: 16px;
+    border: 0.5px solid #D3D3D3;
+    padding:10px;
+}   
+
+.patrika_info .form_area .dob{
+    justify-content: space-between;
+    width:90%;
+}
+
+.options_dob {
+    width: 30%;
+    height: 38px;
+    font-size: 16px;
+    border: 0.5px solid #D3D3D3;
+    padding:8px;
+}
+.options_time{
+    height:38px;
+    font-size:16px;
+    border:0.5px solid #D3D3D3;
+    width:48%;
+    padding:10px;
+    
+}
+.input_place{
+    height:38px;
+    width:100%;
+    font-size: 16px;
+    padding:10px;
+    border: 0.5px solid #D3D3D3;
+}
+
 /*  PATRIKA CONTAINER END*/
 
 

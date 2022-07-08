@@ -42,7 +42,7 @@
 <body>
 
     
-    <div class="intro">
+    <!-- <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
                 <span class="text1">KALSULTANT</span>
@@ -59,7 +59,7 @@
             </h1>
         </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
 
 
 
@@ -194,19 +194,45 @@
                 
             </div>
 
-            <div class="patrika_container" id="report">
+            <div class="patrika_container"  >
                 <h1 style="text-align:center; line-height:70px">Get your personalized<br> patrika </h1>
                 <div class="patrika_info">
                     <form class="form_area">
-                        <input type="name" placeholder="Name" class="input_field" required />
-                        <input type="email" placeholder="Email Address" class="input_field" required />
-                        <input type="phone" placeholder="Contact number" class="input_field" required />
-                        <input type="password" placeholder="Password" class="input_field" required />
-                        <input type="password" placeholder="Confirm password" class="input_field" required />
-                        <input type="submit" value="Sign up" class="input_field_button">
-                    
-                    
-                    
+                        <div class="input_name">
+                            <input type="name" placeholder="First Name" class="input_field" required />
+                            <input type="name" placeholder="Last Name" class="input_field" required />
+                        </div>
+
+                        <div class="gender">
+                      
+                            
+                            <select id="options_gender">
+                                <option value="gender">Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="mercedes">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="dob">
+                            <select class="options_dob" id="day">
+                            </select>
+                            <select class="options_dob" id="month" onchange="changesAreMade()">
+                            </select>
+                            <select class="options_dob" id="year" onchange="changesAreMade()">
+                            </select>   
+                        </div>
+                        <div class="dob">
+                            <select class="options_time" id="hours" onchange="changesAreMade()">
+                            </select>
+                            <select class="options_time" id="minutes" onchange="changesAreMade()">
+                            </select>
+                        </div>
+                        <div class="dob">
+                            <input type="text" placeholder="Birth Place" class="input_place" id="place_of_birth">
+                        </div>
+                        <div class="dob">
+                            <input type="submit"   value="Generate" class="input_place" >
+                        </div>
                     </form>
                 </div>
             
@@ -227,9 +253,9 @@
    
    
    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
         integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
       
         <script src="./app.js"></script>
